@@ -19,4 +19,25 @@ export class AppComponent {
     })
   });
 
+  loadApiData() {
+    console.log("Loading API Data...");
+    /*
+    this.registrationForm.setValue({
+      username: 'friziooo',
+      password: 'pass',
+      confirmPassword: 'pass',
+      address: {
+        city: 'Palermo',
+        state: 'Italy',
+        postalCode: '90100'
+      }
+    });
+    */
+    this.registrationForm.patchValue({
+      username: 'friziooo',
+      password: 'pass',
+      confirmPassword: 'pass'
+    });
+  }
+
 }
